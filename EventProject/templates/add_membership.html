@@ -1,0 +1,19 @@
+<body style="background-color: #d3d3d3; font-family: Arial; text-align: center;">
+    <div style="background-color: #4f81bd; color: white; padding: 15px;">
+        <h3>Add Membership - Admin Portal</h3>
+    </div>
+    <div style="background-color: white; width: 400px; margin: 30px auto; padding: 20px; border: 1px solid #000;">
+        <form action="/maintain_user" method="POST">
+            <p>User ID: <input type="text" required></p>
+            <p>Duration: 
+                <select required>
+                    <option value="6m">6 Months (Default)</option>
+                    <option value="1y">1 Year</option>
+                    <option value="2y">2 Years</option>
+                </select>
+            </p>
+            <p style="font-size: 12px; color: gray;">*All fields are mandatory per Instruction 12.</p>
+            <button type="submit" style="background-color: #4f81bd; color: white; padding: 10px;">Save Membership</button>
+        </form>
+    </div>
+</body>

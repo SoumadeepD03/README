@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - Event Management</title>
+</head>
+<body style="background-color: #d3d3d3; font-family: Arial; text-align: center;">
+    <div style="background-color: #4f81bd; color: white; padding: 20px; width: 50%; margin: 50px auto;">
+        <h2>Event Management System</h2>
+    <p>New User? <a href="/user_signup">Sign Up Here</a></p>
+    <p>Are you a Vendor? <a href="/vendor_signup">Register Business</a></p>
+        <form action="/login_logic" method="POST" style="background-color: #fff; color: black; padding: 20px; border: 1px solid #000;">
+            <p>User Id: <input type="text" name="user_id" required></p>
+            <p>Password: <input type="password" name="password" required></p>
+            <br>
+            <button type="button" style="padding: 10px;">Cancel</button>
+            <button type="submit" style="padding: 10px; background-color: #ccc;">Login</button>
+        </form>
+    </div>
+</body>
+</html>
