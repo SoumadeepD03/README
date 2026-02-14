@@ -8,14 +8,56 @@
         <div style="display: flex; gap: 10px;">
             <div style="background-color: #2e548a; color: white; padding: 10px; border-radius: 15px;">
             <h5>Membership</h5>
-            <button style="padding: 10px;">Add</button>
-            <button style="padding: 10px;">Update</button>
+            <button onclick="location.href='/add_membership'" style="padding: 10px;">Add</button>
+            <button onclick="location.href='/update_membership'" style="padding: 10px;">Update</button>
         </div>
         <div style="display: flex; gap: 10px;">
             <div style="background-color: #2e548a; color: white; padding: 10px; border-radius: 15px;">
             <h5>User Management</h5>
-            <button style="padding: 10px;">Add</button>
-            <button style="padding: 10px;">Update</button>
+            <button onclick="location.href='/add_user'" style="padding: 10px;">Add</button>
+            <button onclick="location.href='/update_user'" style="padding: 10px;">Update</button>
         </div>
+            <div style="margin-top: 30px; width: 90%; margin-left: auto; margin-right: auto;">
+        <!-- <table border="1" style="width: 100%; border-collapse: collapse; background-color: white; color: black;">
+            <tr style="background-color: #2e548a; color: white;">
+                <th style="padding: 10px;">ID</th>
+                <th style="padding: 10px;">Username</th>
+                <th style="padding: 10px;">Email</th>
+                <th style="padding: 10px;">Role</th>
+            </tr>
+ 
+            {% for user in users %}
+            <tr>
+                <td style="padding: 8px; border: 1px solid #ccc;">{{ user['id'] }}</td>
+                <td style="padding: 8px; border: 1px solid #ccc;">{{ user['username'] }}</td>
+                <td style="padding: 8px; border: 1px solid #ccc;">{{ user['email'] }}</td>
+                <td style="padding: 8px; border: 1px solid #ccc;">{{ user['role'] }}</td>
+            </tr>
+            {% endfor %}
+        </table> -->
+        <table border="1" style="width: 100%; border-collapse: collapse; background-color: white; color: black;">
+    <tr style="background-color: #2e548a; color: white;">
+        <th>ID</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Role</th>
+        <th>Password</th>
+        <th>Action</th> </tr>
+    {% for user in users %}
+    <tr>
+        <td style="padding: 8px; border: 1px solid #ccc;">{{ user['id'] }}</td>
+        <td style="padding: 8px; border: 1px solid #ccc;">{{ user['username'] }}</td>
+        <td style="padding: 8px; border: 1px solid #ccc;">{{ user['email'] }}</td>
+        <td style="padding: 8px; border: 1px solid #ccc;">{{ user['role'] }}</td>
+        <td style="padding: 8px; border: 1px solid #ccc;">{{ user['password'] }}</td>
+        <td style="padding: 8px; border: 1px solid #ccc;">
+            <a href="/delete_user/{{ user['id'] }}" 
+               onclick="return confirm('Are you sure you want to delete this user?')"
+               style="color: red; text-decoration: none; font-weight: bold;">Delete</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+    </div>
     </div>
 </body>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head><title>Update User</title></head>
+<body style="background-color: #d3d3d3; font-family: Arial; text-align: center;">
+    <h2 style="background-color: #2e548a; color: white; padding: 15px;">Update User Details</h2>
+    <div style="background-color: white; width: 350px; margin: 50px auto; padding: 20px; border: 2px solid #2e548a;">
+        <form action="/update_logic" method="POST">
+            <p>User ID to Update: <input type="number" name="u_id" placeholder="Enter ID from table" required></p>
+            <hr>
+            <p>New Username: <input type="text" name="new_name" required></p>
+            <p>New Email: <input type="email" name="new_email" required></p>
+            <p>Password: <input type="password" name="u_password" required></p>
+            <p>New Role: 
+                <select name="new_role">
+                    <option value="User">User</option>
+                    <option value="Vendor">Vendor</option>
+                    <option value="Admin">Admin</option>
+                </select>
+            </p>
+            <button type="submit" style="background-color: #4f81bd; color: white; padding: 10px;">Update Database</button>
+            <button type="button" onclick="location.href='/maintain_user'">Cancel</button>
+        </form>
+    </div>
+</body>
+</html>

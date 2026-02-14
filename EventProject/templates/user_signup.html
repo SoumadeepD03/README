@@ -3,11 +3,14 @@
         <h3>User Registration</h3>
     </div>
     <div style="background-color: white; width: 350px; margin: 30px auto; padding: 20px; border: 1px solid #000;">
-        <form action="/" method="GET">
-            <p>Full Name: <input type="text" required></p>
-            <p>Email: <input type="email" required></p>
-            <p>New User Id: <input type="text" required></p>
-            <p>Password: <input type="password" required></p>
+        <form action="/save-user" method="POST">
+            <p>Full Name: <input type="text" name="u_name" required></p>
+            <p>Email: <input type="email" name="u_email" required></p>
+            <p>Password: <input type="password" name="u_password" required></p>
+              <p>Role: <required>
+                <select name="u_nrole">
+                    <option value="User">User</option>
+                </select></p>
             <button type="submit" style="background-color: #4f81bd; color: white; padding: 10px; width: 100%;">Create Account</button>
         </form>
         <p><a href="/">Already have an account? Login</a></p>

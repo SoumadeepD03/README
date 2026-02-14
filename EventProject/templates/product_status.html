@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Status</title>
+</head>
+<body style="background-color: #d3d3d3; font-family: Arial; text-align: center; margin: 0;">
+ 
+    <div style="background-color: #4f81bd; color: white; padding: 10px; display: flex; justify-content: space-between; padding: 10px 50px;">
+        <button onclick="location.href='/'" style="background-color: #2e548a; color: white; border: none; padding: 5px 15px; cursor: pointer;">Home</button>
+        <button onclick="location.href='/'" style="background-color: #2e548a; color: white; border: none; padding: 5px 15px; cursor: pointer;">LogOut</button>
+    </div>
+ 
+    <div style="background-color: #2e548a; color: white; width: 400px; margin: 20px auto; padding: 10px;">
+        <h2 style="margin: 0;">Product Status</h2>
+    </div>
+ 
+    <table style="margin: 20px auto; border-collapse: separate; border-spacing: 10px;">
+        <tr style="color: white;">
+            <th style="background-color: #2e548a; padding: 10px; width: 100px;">Name</th>
+            <th style="background-color: #2e548a; padding: 10px; width: 100px;">E-Mail</th>
+            <th style="background-color: #2e548a; padding: 10px; width: 100px;">Address</th>
+            <th style="background-color: #2e548a; padding: 10px; width: 100px;">Status</th>
+            <th style="background-color: #2e548a; padding: 10px; width: 100px;">Update</th>
+            <th style="background-color: #2e548a; padding: 10px; width: 100px;">Delete</th>
+        </tr>
+        <tr>
+            <td><div style="background-color: #4f81bd; height: 35px;"></div></td>
+            <td><div style="background-color: #4f81bd; height: 35px;"></div></td>
+            <td><div style="background-color: #4f81bd; height: 35px;"></div></td>
+            <td><div style="background-color: #4f81bd; height: 35px;"></div></td>
+            <td>
+                <button onclick="location.href='/update_status'" style="background-color: #4f81bd; color: white; border: none; width: 100%; height: 35px; cursor: pointer;">Update</button>
+            </td>
+            <td>
+                <button onclick="alert('Item Deleted')" style="background-color: #4f81bd; color: white; border: none; width: 100%; height: 35px; cursor: pointer;">Delete</button>
+            </td>
+        </tr>
+    </table>
+ 
+</body>
+</html>

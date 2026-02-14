@@ -1,0 +1,21 @@
+<h2>Membership List</h2>
+<table border="1" style="width:100%; text-align:left;">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Member Name</th>
+            <th>Type</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for member in memberships %}
+        <tr>
+            <td>{{ member['id'] }}</td>
+            <td>{{ member['name'] }}</td>
+            <td>{{ member['type'] }}</td>
+            <td>{{ member['status'] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
